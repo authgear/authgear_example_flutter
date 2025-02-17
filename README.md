@@ -1,17 +1,20 @@
 # Authgear sample for Flutter
 
-This repo demonstrates how to add authentication into a Flutter app using Authgear.
+This repo demonstrates how to add user authentication to a Flutter app using Authgear.
 
 ## Project setup
 
-Clone this, update the configuration then run `flutter run` from the project's root directory 
+Clone the repo, update the configuration then run `flutter run` from the project's root directory. 
 
 ### Configuration
 
-The project needs to be configured with your Authgear app's Endpoint and client ID in order for the authentication flow to work.
+The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
 To do this, in `lib/main.dart`, replace `"<ClIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear application credentials.
 
+To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
+
+- `com.example.authgeardemo.flutter://host/path`
 
 ## What is Authgear?
 
