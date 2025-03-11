@@ -10,7 +10,7 @@ Clone the repo, update the configuration then run `flutter run` from the project
 
 The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
-To do this, in `lib/main.dart`, replace `"<ClIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear application credentials.
+To do this, open `lib/constants.dart`, and replace `"<CLIENT_ID>"`, `"<AUTHGEAR_ENDPOINT>"` with with your own Authgear application credentials.
 
 To run this example app, add the following URI to your Authgear client application's Authorized Redirect URI:
 

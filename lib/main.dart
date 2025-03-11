@@ -1,3 +1,4 @@
+import 'package:authgearflutterexample/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_authgear/flutter_authgear.dart';
 
@@ -31,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
   late Authgear _authgear;
   Future<void> _init() async {
     _authgear =
-        Authgear(endpoint: "<AUTHGEAR_ENDPOINT>", clientID: "<ClIENT_ID>");
+        Authgear(endpoint: authgearEndpoint, clientID: authgearClientId);
     await _authgear.configure();
 
     if (_authgear.sessionState == SessionState.authenticated) {
@@ -91,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> _onPressedAuthenticate() async {
     try {
       final userInfo = await _authgear.authenticate(
-          redirectURI: "com.example.authgeardemo.flutter://host/path");
+          redirectURI: authgearRedirectUri);
       setState(() {
         _userInfo = userInfo;
       });
