@@ -4,9 +4,14 @@ This repo demonstrates how to add user authentication to a Flutter app using Aut
 
 ## Project setup
 
-Clone the repo, update the configuration then run `flutter run` from the project's root directory. 
+### Create Free Authgear Account
+1. Goto [https://portal.authgear.com](https://portal.authgear.com) and create a free account (or login to your existing account).
+
+2. Then navigate to Applications and create a new client application of type Native App.
 
 ### Configuration
+
+Clone the repo, update the configuration then run `flutter run` from the project's root directory. 
 
 The project needs to be configured with your Authgear client application's **Endpoint** and **Client ID** in order for the authentication flow to work.
 
